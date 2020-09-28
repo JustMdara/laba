@@ -1,0 +1,22 @@
+system 1
+system 1
+mov 0FF0, r0
+out r0, p0
+out r0, p1
+out r0, p2
+mov 0180, r0
+out r0, p3
+out r0, p4
+out r0, p5
+out r0, p6
+out r0, p7
+
+mov 1, r1
+MOLOTOK:
+system A
+system B
+system B
+system A
+jnz MILOTOK
+
+stop
